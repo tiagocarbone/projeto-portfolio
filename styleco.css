@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-color:#2b2b2b; ;
+}
+
+nav{
+    color: white;
+    padding-left: 0px;
+    padding-top: 0px;
+    height: 50px;
+    animation-name: profile-nav;
+    animation-duration: 2s;
+}
+
+nav ul{
+    list-style: none;
+    text-align: right;
+    background-color: #2b2b2b;
+    height: 50px;
+}
+
+
+
+nav li{
+    display: inline-block;
+    padding-top: 15px;
+    font-size: 22px;
+    padding-bottom: 5px;
+   
+    
+}
+
+
+nav li > a {
+    text-decoration: none;
+    padding-top: 50px;
+    padding-bottom: 11px;
+    color: white;
+    margin-left: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+
+}
+
+.caminho{
+    list-style-type: none;
+    padding-left: 0px;
+    color: gray;
+}
+
+.caminho li{
+    display: inline-block;
+}
+
+
+nav li > a:hover{
+    color: #f27609;
+    background-color: black;
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+
+
+.main{
+    background-color: #2b2b2b;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 40px;
+    padding-right:180px; 
+    padding-bottom: 70px ;
+    padding-left: 100px; ;
+    animation-name: conteudo;
+    animation-duration: 2s;
+}
+
+
+.main h1 {
+    color: white;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main h2{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main h3{
+    font-size: 12px;
+    color: #f27609;
+    text-transform: uppercase;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.main p{
+    color: white;
+    font-size: 18px;
+    font-weight:100;
+    line-height: 26px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: justify;
+}
+
+.social{
+    width: 55px;
+    margin-right: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f27609;
+}
+
+
+.caminho a{
+    color: grey;
+}
+
+
+li.fim{
+    padding-right: 10px;
+    display: none;
+
+}
+
+li.fim:hover{
+    color: #f27609;
+    cursor: pointer;
+}
+
+
+@keyframes conteudo {
+    0% {opacity: 0;  transform: translate(-20px,0px);}
+    100% {transform: translate(0px,0px);} 
+    
+}
+
+@keyframes profile-nav {
+    0% {opacity: 0;}
+    50%{opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+@media (max-width:1000px){
+    nav li{
+        display: none;
+    }
+
+    nav li.fim{
+        display:inline-block ;
+    }
+
+    nav li a{
+        color: white;
+        padding: 0%;
+    }
+    
+
+    nav li a:hover{
+        background-color: #2b2b2b;
+    }
+
+
+    .caminho li{
+        font-size: 12px;
+    }
+
+   
+
+    .menujs{
+    
+        height:auto ;
+    }
+    
+    .menujs ul{
+        height:auto ;
+        text-align: center;
+        padding-right:15% ;
+        padding-left:15% ;
+    }
+    
+    .menujs li{
+        display: block;
+        border-bottom: solid #faf2f2 1px;
+        width: 100%;
+        
+    
+    }
+
+}
